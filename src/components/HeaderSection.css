@@ -120,7 +120,7 @@ hr{
     }
     hr{
         margin-top: -20px;
-        margin-right: 0;
+        margin-right: 20px;
     }
     .description-heading{
         font-size: 15px;
@@ -147,6 +147,6 @@ hr{
         background-repeat: no-repeat;
     }
     .btn--wide{
-        padding: 0;
+        padding: 0 5px !important;
     }
 }
