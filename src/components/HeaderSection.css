@@ -120,7 +120,7 @@ hr{
     }
     hr{
         margin-top: -20px;
-        margin-right: 20px;
+        margin-right: 0;
     }
     .description-heading{
         font-size: 15px;
