@@ -1,0 +1,149 @@
+.header-section{
+    background: #242424;
+    height: 575px;
+}
+
+.header-section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: url(../images/wave.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col{
+    width: 50%;
+    padding: 100px 40px;
+}
+
+.title-heading{
+    font-size: 100px;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.subtitle-heading{
+    margin-top: -30px;
+    font-size: 47px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+}
+
+.description-heading{
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+}
+
+hr{
+    width: 25%;
+    margin-top: -30px;
+    float: right;
+    margin-right: 75px;
+}
+
+.sosial-media{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sosial-link{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 0.5rem 0.3rem;
+    font-size: 20px;
+}
+
+.subtitle-right{
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.title-right{
+    color: #000;
+    border-radius: 8px;
+    border: 2px solid #FCC233;
+    background-color: #FCC233;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.description-right{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.button-learn-more{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1020px) { 
+    .header-section{
+        height: 820px;
+    }
+    .col{
+        width: 100%;
+        padding: 10px 4px;
+    }
+    .title-heading{
+        font-size: 60px;
+        letter-spacing: 0.7rem;
+    }
+    .subtitle-heading{
+        margin-top: -10px;
+        font-size: 30px;
+    }
+    hr{
+        margin-top: -20px;
+        margin-right: 0;
+    }
+    .description-heading{
+        font-size: 15px;
+    }
+    .sosial-media{
+        justify-content: center;
+    }
+    .sosial-link{
+        padding: 0.5rem 1rem;
+    }
+    .description-right{
+        text-align: center;
+    }
+    .header-section::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 835px;
+        width: 100%;
+        height: 75px;
+        background: url(../images/wave.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,192 @@
+
+.card-wrapper{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 10px;
+    box-sizing: border-box;
+}
+
+.card-wrapper:active:hover:focus{
+    outline: none;
+    border: none;
+}
+
+.card{
+    width: 100%;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 460px;
+}
+
+.card .card-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #fdde8f;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-inner:hover{
+    opacity: 4;
+    transform: translateY(-100px);
+    transition: all .9s;
+}
+
+.social-icons{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+}
+
+.social-icons li{
+    list-style-type: none;
+}
+
+.social-icons a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border-radius: 16px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 6px;
+    transition: .4s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.social-icons li a:hover{
+    background: #FCC233;
+    color: #fff;
+}
+
+.card:hover .social-icons li a{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.card:hover li:nth-child(1) a{
+    transition-delay: .1s;
+}
+
+.card:hover li:nth-child(2) a{
+    transition-delay: .2s;
+}
+
+.social-links{
+    padding: 0.5rem 0.5rem;
+}
+
+.details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FCC233;
+    width: 100%;
+    height: 140px;
+    z-index: 1;
+    opacity: 0;
+    padding: 10px;
+    transition: .6s;
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: #000;
+    padding: 0;
+}
+
+.job-title{
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: block;
+}
+
+.card:hover >
+.details{
+    bottom: 0;
+    opacity: 1;
+    z-index: 2;
+}
+
+.slick-slider{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slick-prev{
+    left: 0px !important;
+    z-index: 2 !important;
+}
+
+.slick-next{
+    right: 0px !important;
+    z-index: 2 !important;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #000 !important;
+    font-size: 40px !important;
+    opacity: 1 !important;
+}
+
+.slick-dots{
+    bottom: 35px !important;
+}
+
+.slick-list{
+    width: 700px !important;
+}
+
+@media screen and (min-width: 1020px) { 
+    .slick-next{
+        right: -35px !important;
+        z-index: 2 !important;
+    }
+    .slick-list{
+        width: 600px !important;
+        margin-left: 20px;
+    }
+    .slick-next{
+        right: 15px !important;
+        z-index: 2 !important;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .slick-list{
+        width: 300px !important;
+        margin-left: 0;
+    }
+    .slick-next{
+        right: 14px !important;
+        z-index: 2 !important;
+    }
+}
+
