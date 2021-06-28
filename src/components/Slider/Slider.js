@@ -63,7 +63,7 @@ const ImageSlider = () => {
                                         </li>
                                     </ul>
                                     <div className="details">
-                                        <h2 className="title">{title} <span className="job-title">{jobTitle}</span></h2>
+                                        <h2 className="title-slider">{title} <span className="job-title">{jobTitle}</span></h2>
                                     </div>
                                 </div>
                             </div>
